@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  opentripplanner:
+    image: ${OTP_IMAGE}:${OTP_TAG}
+    depends_on:
+      - "graph"
+    environment:
+      - ROUTER_NAME=default
+      - ROUTER_DATA_CONTAINER_URL=http://graph/
+    ports:
+      - "${OTP_PORT}:8080"
+  graph:
+    build: 
+      context: .
+      args:
+        - OTP_IMAGE=${OTP_IMAGE}
+        - OTP_TAG=${OTP_TAG}
+        - gtfs_url=${GTFS_URL}
+        - osm_pbf_url=${OSM_URL}
+        - memory=${GRAPH_BUILD_MEMORY}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 15s
+      timeout: 10s
+      retries: 3  
