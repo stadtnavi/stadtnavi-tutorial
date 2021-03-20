@@ -188,13 +188,6 @@ In the console you will see this message `Digitransit-ui available on port 8080`
         },
         STOP_MAP: `${API_URL}/map/v1/stop-map/`,
         GEOCODING_BASE_URL: GEOCODING_BASE_URL,
-        DYNAMICPARKINGLOTS_MAP: `${API_URL}/map/v1/hb-parking-map/`,
-        ROADWORKS_MAP: `${API_URL}/map/v1/cifs/`,
-        COVID19_MAP: `https://tiles.caresteouvert.fr/public.poi_osm_light/{z}/{x}/{y}.pbf`,
-        CITYBIKE_MAP: `${API_URL}/map/v1/regiorad-map/`,
-        WEATHER_STATIONS_MAP: `${API_URL}/map/v1/weather-stations/`,
-        CHARGING_STATIONS_MAP: `${API_URL}/map/v1/charging-stations/`,
-        BUS_POSITIONS_MAP: `${API_URL}/map/v1/bus-positions/`
       },
 
       appBarLink: false,
