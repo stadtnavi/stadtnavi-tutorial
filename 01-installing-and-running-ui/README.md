@@ -150,7 +150,6 @@ In the console you will see this message `Digitransit-ui available on port 8080`
   * e.g. change the primary color to orange: `$primary-color: #ff7300;` 
 * City Name 
     * modify the `APP_TITLE` variable located in app/configurations/config.<new_theme>.js
-    * We should simplify Logo creation. Creating a new SVG manually is not an option. Any ideas?
 * `config.rt.js`
     * Replace the content of `config.rt.js` with the following code:
     ```
