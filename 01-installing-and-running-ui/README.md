@@ -277,7 +277,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
           {
             name: 'about-this-service',
             nameEn: 'About this service',
-            route: '/tietoja-palvelusta',
+            route: '/dieser-dienst',
             icon: 'icon-icon_info',
           },
         ],
