@@ -1,0 +1,1989 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "B\u00f6smanns\u00e4cker",
+        "name_en": "B\u00f6smanns\u00e4cker",
+        "name_de": "B\u00f6smanns\u00e4cker",
+        "popupContent": "Stellpl\u00e4tze: 500, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 500, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 500, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_0",
+        "icon": {
+          "id": "carParkOpIcon",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" data-name=\"Ebene 1\" viewBox=\"0 0 32.53 32.53\">  <path fill=\"#005ab4\" d=\"M32.53 16.27A16.27 16.27 0 1116.27 0a16.26 16.26 0 0116.26 16.27\"/>  <path fill=\"#fff\" d=\"M22.51 13.75a4.49 4.49 0 00-4.8-4.54h-5.64v14.55h2.84v-5.47h2.8a4.49 4.49 0 004.8-4.54m-2.84 0a1.92 1.92 0 01-2.11 2h-2.65v-4h2.65a1.94 1.94 0 012.11 2\"/></svg>"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1950302,
+          48.4940816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 20",
+        "popupContent_de": "Stellpl\u00e4tze: 20",
+        "popupContent_en": "Capacity: 20",
+        "id": "Parkplatz_1",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3565148,
+          48.5886369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 25",
+        "popupContent_de": "Stellpl\u00e4tze: 25",
+        "popupContent_en": "Capacity: 25",
+        "id": "Parkplatz_2",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3565967,
+          48.5885188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 25",
+        "popupContent_de": "Stellpl\u00e4tze: 25",
+        "popupContent_en": "Capacity: 25",
+        "id": "Parkplatz_3",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3547117,
+          48.597288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ortsmitte",
+        "name_en": "Ortsmitte",
+        "name_de": "Ortsmitte",
+        "popupContent": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 12, Fee: no",
+        "id": "Parkplatz_4",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1198979,
+          48.5204774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 40, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 40, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 40, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_5",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3380608,
+          48.4522984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stahleck",
+        "name_en": "Stahleck",
+        "name_de": "Stahleck",
+        "popupContent": "Stellpl\u00e4tze: 40, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 40, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 40, Fee: no",
+        "id": "Parkplatz_6",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.304799,
+          48.4443596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 12",
+        "popupContent_de": "Stellpl\u00e4tze: 12",
+        "popupContent_en": "Capacity: 12",
+        "id": "Parkplatz_7",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3167492,
+          48.4395208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 16, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 16, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 16, Fee: no",
+        "id": "Parkplatz_8",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2420255,
+          48.4598485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bahnhof",
+        "name_en": "Bahnhof",
+        "name_de": "Bahnhof",
+        "popupContent": "Stellpl\u00e4tze: 260, Geb\u00fchrenpflichtig: mo-sa 6:00-23:00, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 260, Geb\u00fchrenpflichtig: mo-sa 6:00-23:00, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 260, Fee: mo-sa 6:00-23:00, Wheelchair: yes",
+        "id": "Parkplatz_9",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2117748,
+          48.4982222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaiserstra\u00dfe",
+        "name_en": "Kaiserstra\u00dfe",
+        "name_de": "Kaiserstra\u00dfe",
+        "popupContent": "Stellpl\u00e4tze: 25, Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 25, Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Capacity: 25, Fee: yes",
+        "id": "Parkplatz_10",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2204192,
+          48.4904193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 177, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 177, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 177, Fee: yes, Wheelchair: yes",
+        "id": "Parkplatz_11",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2116257,
+          48.497376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 25",
+        "popupContent_de": "Stellpl\u00e4tze: 25",
+        "popupContent_en": "Capacity: 25",
+        "id": "Parkplatz_12",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2995362,
+          48.5424794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 30",
+        "popupContent_de": "Stellpl\u00e4tze: 30",
+        "popupContent_en": "Capacity: 30",
+        "id": "Parkplatz_13",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1938632,
+          48.4741583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 14, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 14, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 14, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_14",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.15203,
+          48.44117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sportplatz",
+        "name_en": "Sportplatz",
+        "name_de": "Sportplatz",
+        "popupContent": "Stellpl\u00e4tze: 60, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 60, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 60, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_15",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0987408,
+          48.6003895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 15",
+        "popupContent_de": "Stellpl\u00e4tze: 15",
+        "popupContent_en": "Capacity: 15",
+        "id": "Parkplatz_16",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1508931,
+          48.4318081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 17, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 17, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 17, Wheelchair: yes",
+        "id": "Parkplatz_17",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1007865,
+          48.6037871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 30",
+        "popupContent_de": "Stellpl\u00e4tze: 30",
+        "popupContent_en": "Capacity: 30",
+        "id": "Parkplatz_18",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1979019,
+          48.562083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 20, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 20, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 20, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_19",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0942043,
+          48.606454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 18, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 18, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 18, Fee: no, Wheelchair: yes",
+        "id": "Parkplatz_20",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.106176,
+          48.6063853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 17, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 17, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 17, Fee: no",
+        "id": "Parkplatz_21",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.291185,
+          48.5072822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 40",
+        "popupContent_de": "Stellpl\u00e4tze: 40",
+        "popupContent_en": "Capacity: 40",
+        "id": "Parkplatz_22",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3191751,
+          48.5517219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 20",
+        "popupContent_de": "Stellpl\u00e4tze: 20",
+        "popupContent_en": "Capacity: 20",
+        "id": "Parkplatz_23",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3067105,
+          48.5450757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 15, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 15, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 15, Fee: no",
+        "id": "Parkplatz_24",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1851721,
+          48.5336183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 19",
+        "popupContent_de": "Stellpl\u00e4tze: 19",
+        "popupContent_en": "Capacity: 19",
+        "id": "Parkplatz_25",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2311809,
+          48.4673204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 15, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 15, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 15, Fee: no",
+        "id": "Parkplatz_26",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1844604,
+          48.5879198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 30, Fee: no",
+        "id": "Parkplatz_27",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1400731,
+          48.5285554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 11, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 11, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 11, Fee: no",
+        "id": "Parkplatz_28",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1494588,
+          48.5314475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 13",
+        "popupContent_de": "Stellpl\u00e4tze: 13",
+        "popupContent_en": "Capacity: 13",
+        "id": "Parkplatz_29",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1066012,
+          48.4882611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 20",
+        "popupContent_de": "Stellpl\u00e4tze: 20",
+        "popupContent_en": "Capacity: 20",
+        "id": "Parkplatz_30",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2767624,
+          48.5484943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkplatz Friedhof",
+        "name_en": "Parkplatz Friedhof",
+        "name_de": "Parkplatz Friedhof",
+        "popupContent": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 30, Fee: no",
+        "id": "Parkplatz_31",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3420444,
+          48.5308823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 75",
+        "popupContent_de": "Stellpl\u00e4tze: 75",
+        "popupContent_en": "Capacity: 75",
+        "id": "Parkplatz_32",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1980329,
+          48.4763155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 100, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 100, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 100, Fee: no",
+        "id": "Parkplatz_33",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2532879,
+          48.5558751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkplatz Kelternplatz",
+        "name_en": "Parkplatz Kelternplatz",
+        "name_de": "Parkplatz Kelternplatz",
+        "popupContent": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 12, Fee: yes, Wheelchair: yes",
+        "id": "Parkplatz_34",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2867671,
+          48.5409171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: nein, Barrierefrei: begrenzt",
+        "popupContent_de": "Stellpl\u00e4tze: 12, Geb\u00fchrenpflichtig: nein, Barrierefrei: begrenzt",
+        "popupContent_en": "Capacity: 12, Fee: no, Wheelchair: limited",
+        "id": "Parkplatz_35",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2257053,
+          48.4668493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Car parking",
+        "name_de": "Parkplatz",
+        "name": "Parkplatz",
+        "popupContent": "Stellpl\u00e4tze: 50, Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 50, Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Capacity: 50, Fee: yes",
+        "id": "Parkplatz_36",
+        "icon": {
+          "id": "carParkOpIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2869689,
+          48.5404566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bahnhof",
+        "name_en": "Bahnhof",
+        "name_de": "Bahnhof",
+        "popupContent": "Stellpl\u00e4tze: 260, Geb\u00fchrenpflichtig: mo-sa 6:00-23:00, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 260, Geb\u00fchrenpflichtig: mo-sa 6:00-23:00, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 260, Fee: mo-sa 6:00-23:00, Wheelchair: yes",
+        "id": "Park-Und-Ride_0",
+        "icon": {
+          "id": "carPRIcon",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Ebene_1\" data-name=\"Ebene 1\" viewBox=\"0 0 32.53 32.53\">  <defs>    <style>      .cls-2,.cls-3{fill:#fff}.cls-3{fill-rule:evenodd}    </style>  </defs>  <path fill=\"#005ab4\" d=\"M320.34 384.05a16.27 16.27 0 11-16.26-16.27 16.26 16.26 0 0116.26 16.27\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M299.17 383.45a2.18 2.18 0 01-.63.85 2.57 2.57 0 01-1 .49 4.58 4.58 0 01-1.2.16h-1.83v2.95h-1.66v-8.33h3.64a3.68 3.68 0 011.11.16 2.71 2.71 0 01.92.49 2.33 2.33 0 01.61.83 2.64 2.64 0 01.23 1.16 3.08 3.08 0 01-.23 1.24m-1.81-2a1.42 1.42 0 00-.89-.25h-1.92v2.12h1.94q1.2 0 1.2-1.08a.93.93 0 00-.33-.79\" class=\"cls-2\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M16.8 16.79v2.26h-1.63v-2.26h-2.18v-1.55h2.18v-2.26h1.63v2.26h2.18v1.55H16.8z\" class=\"cls-2\"/>  <path d=\"M313.34 387.9l-1.49-3h-1.68v3h-1.65v-8.33h3.87a3.68 3.68 0 011.11.16 2.71 2.71 0 01.92.49 2.48 2.48 0 01.62.83 2.76 2.76 0 01.22 1.16 2.69 2.69 0 01-.4 1.54 2.43 2.43 0 01-1.19.91l1.59 3.24zm-.11-6.46a1.42 1.42 0 00-.88-.24h-2.18v2.13h2.18q1.2 0 1.2-1.08a1 1 0 00-.32-.81\" class=\"cls-2\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M292.9 378.33h22.36a2.18 2.18 0 00-1.87-2.13h-18.62a2.13 2.13 0 00-1.87 2.13M292.89 389.14h22.36a2.17 2.17 0 01-1.87 2.12h-18.62a2.13 2.13 0 01-1.87-2.12\" class=\"cls-3\" transform=\"translate(-287.81 -367.78)\"/></svg>"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2117748,
+          48.4982222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Fee: no",
+        "id": "Park-Und-Ride_1",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2046,
+          48.511858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Park-Und-Ride_2",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2904987,
+          48.5390697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Stellpl\u00e4tze: 20, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 20, Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 20, Fee: no, Wheelchair: yes",
+        "id": "Park-Und-Ride_3",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0942043,
+          48.606454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Park-Und-Ride_4",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.289457,
+          48.5419857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Barrierefrei: ja",
+        "popupContent_de": "Barrierefrei: ja",
+        "popupContent_en": "Wheelchair: yes",
+        "id": "Park-Und-Ride_5",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2895966,
+          48.5409552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dorfgemeinschaftshaus",
+        "name_en": "Dorfgemeinschaftshaus",
+        "name_de": "Dorfgemeinschaftshaus",
+        "popupContent": "Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Fee: no",
+        "id": "Park-Und-Ride_6",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2743071,
+          48.5717984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Fee: no, Wheelchair: yes",
+        "id": "Park-Und-Ride_7",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2740883,
+          48.5725562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Park-Und-Ride_8",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2293924,
+          48.4828921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Stellpl\u00e4tze: 5, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 5, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 5, Fee: no",
+        "id": "Park-Und-Ride_9",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1388375,
+          48.5295475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Stellpl\u00e4tze: 10, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 10, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 10, Fee: no",
+        "id": "Park-Und-Ride_10",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1389306,
+          48.5293702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 30, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 30, Fee: no",
+        "id": "Park-Und-Ride_11",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1400731,
+          48.5285554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Park-Und-Ride_12",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3594226,
+          48.5950315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Fee: no, Wheelchair: yes",
+        "id": "Park-Und-Ride_13",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0928165,
+          48.6070609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Park and Ride",
+        "name_de": "Park-Und-Ride",
+        "name": "Park-Und-Ride",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Park-Und-Ride_14",
+        "icon": {
+          "id": "carPRIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2731796,
+          48.5723876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P3",
+        "name_en": "P3",
+        "name_de": "P3",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_0",
+        "icon": {
+          "id": "carParkCovIcon",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Ebene_1\" data-name=\"Ebene 1\" viewBox=\"0 0 32.53 32.53\">  <defs>    <style>      .cls-1{fill:#fff}    </style>  </defs>  <path d=\"M293.22 379.21v.63a1.16 1.16 0 001.6 1.07l8.89-3.64a1.12 1.12 0 01.88 0l8.89 3.64a1.16 1.16 0 001.6-1.07v-.63a1.16 1.16 0 00-.72-1.08l-9.77-4a1.21 1.21 0 00-.88 0l-9.77 4a1.16 1.16 0 00-.72 1.08\" class=\"cls-1\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M309.48 384a4.48 4.48 0 00-4.8-4.53H299v14.55h2.84v-5.48h2.8a4.48 4.48 0 004.8-4.54m-2.84 0a1.92 1.92 0 01-2.1 2h-2.66v-4h2.66a1.94 1.94 0 012.1 2\" class=\"cls-1\" transform=\"translate(-287.81 -367.78)\"/>  <path fill=\"#005ab4\" d=\"M320.34 384.05a16.27 16.27 0 11-16.26-16.27 16.26 16.26 0 0116.26 16.27\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M293.15 378.09v.63a1.15 1.15 0 001.59 1.07l8.9-3.64a1.12 1.12 0 01.88 0l8.89 3.64a1.16 1.16 0 001.6-1.07v-.63a1.17 1.17 0 00-.72-1.07l-9.77-4a1.21 1.21 0 00-.88 0l-9.77 4a1.15 1.15 0 00-.72 1.07\" class=\"cls-1\" transform=\"translate(-287.81 -367.78)\"/>  <path d=\"M310.42 384.32a4.48 4.48 0 00-4.8-4.53H300v14.54h2.84v-5.47h2.8a4.48 4.48 0 004.8-4.54m-2.84 0a1.91 1.91 0 01-2.1 2h-2.66v-4h2.66a1.93 1.93 0 012.1 2\" class=\"cls-1\" transform=\"translate(-287.81 -367.78)\"/></svg>"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2173557,
+          48.4832672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Am Bahnhof",
+        "name_en": "Am Bahnhof",
+        "name_de": "Am Bahnhof",
+        "popupContent": "Stellpl\u00e4tze: 620, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Sa 06:30-19:00; PH So off, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 620, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Sa 06:30-19:00; PH So off, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 620, Fee: yes, Opening hours: Mo-Sa 06:30-19:00; PH Su off, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_1",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2085465,
+          48.4961715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rathaus",
+        "name_en": "Rathaus",
+        "name_de": "Rathaus",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 06:00-02:30, Sa 06:00-02:30, So 06:00-02:30, Barrierefrei: begrenzt",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 06:00-02:30, Sa 06:00-02:30, So 06:00-02:30, Barrierefrei: begrenzt",
+        "popupContent_en": "Fee: yes, Opening hours: Mo-Fr 06:00-02:30, Sa 06:00-02:30, Su 06:00-02:30, Wheelchair: limited",
+        "id": "Parkhaus/Tiefgarage_2",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2104288,
+          48.4909145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lederstra\u00dfe",
+        "name_en": "Lederstra\u00dfe",
+        "name_de": "Lederstra\u00dfe",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7, Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7, Barrierefrei: ja",
+        "popupContent_en": "Fee: yes, Opening hours: 24/7, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_3",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.212079,
+          48.4885234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus Stadtmitte",
+        "name_en": "Parkhaus Stadtmitte",
+        "name_de": "Parkhaus Stadtmitte",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, Barrierefrei: nein",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, Barrierefrei: nein",
+        "popupContent_en": "Fee: yes, Wheelchair: no",
+        "id": "Parkhaus/Tiefgarage_4",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2138409,
+          48.492065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pomologie",
+        "name_en": "Pomologie",
+        "name_de": "Pomologie",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_en": "Fee: yes, Opening hours: 24/7",
+        "id": "Parkhaus/Tiefgarage_5",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2073428,
+          48.4883526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Multi-storey/underground car parking",
+        "name_de": "Parkhaus/Tiefgarage",
+        "name": "Parkhaus/Tiefgarage",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_6",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2178665,
+          48.4963073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obere W\u00e4ssere",
+        "name_en": "Obere W\u00e4ssere",
+        "name_de": "Obere W\u00e4ssere",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_en": "Fee: yes, Opening hours: 24/7",
+        "id": "Parkhaus/Tiefgarage_7",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2171824,
+          48.4883304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Multi-storey/underground car parking",
+        "name_de": "Parkhaus/Tiefgarage",
+        "name": "Parkhaus/Tiefgarage",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Parkhaus/Tiefgarage_8",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.194686,
+          48.4744582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Multi-storey/underground car parking",
+        "name_de": "Parkhaus/Tiefgarage",
+        "name": "Parkhaus/Tiefgarage",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_9",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2173923,
+          48.4847763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P0",
+        "name_en": "P0",
+        "name_de": "P0",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Parkhaus/Tiefgarage_10",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2843426,
+          48.5371483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus P2",
+        "name_en": "Parkhaus P2",
+        "name_de": "Parkhaus P2",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_11",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2811823,
+          48.535174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P3",
+        "name_en": "P3",
+        "name_de": "P3",
+        "popupContent": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Fee: no, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_12",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2777835,
+          48.5321089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Multi-storey/underground car parking",
+        "name_de": "Parkhaus/Tiefgarage",
+        "name": "Parkhaus/Tiefgarage",
+        "popupContent": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: nein, Barrierefrei: ja",
+        "popupContent_en": "Fee: no, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_13",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0948529,
+          48.4542742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus S\u00e4gem\u00fchle",
+        "name_en": "Parkhaus S\u00e4gem\u00fchle",
+        "name_de": "Parkhaus S\u00e4gem\u00fchle",
+        "popupContent": "",
+        "popupContent_de": "",
+        "popupContent_en": "",
+        "id": "Parkhaus/Tiefgarage_14",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2367664,
+          48.5913017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rathaus-Tiefgarage",
+        "name_en": "Rathaus-Tiefgarage",
+        "name_de": "Rathaus-Tiefgarage",
+        "popupContent": "Barrierefrei: nein",
+        "popupContent_de": "Barrierefrei: nein",
+        "popupContent_en": "Wheelchair: no",
+        "id": "Parkhaus/Tiefgarage_15",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2835707,
+          48.54051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus P2",
+        "name_en": "Parkhaus P2",
+        "name_de": "Parkhaus P2",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_16",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.280084,
+          48.5356489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P0",
+        "name_en": "P0",
+        "name_de": "P0",
+        "popupContent": "Barrierefrei: begrenzt",
+        "popupContent_de": "Barrierefrei: begrenzt",
+        "popupContent_en": "Wheelchair: limited",
+        "id": "Parkhaus/Tiefgarage_17",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2847348,
+          48.5370894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus P1",
+        "name_en": "Parkhaus P1",
+        "name_de": "Parkhaus P1",
+        "popupContent": "Stellpl\u00e4tze: 660, Geb\u00fchrenpflichtig: nein",
+        "popupContent_de": "Stellpl\u00e4tze: 660, Geb\u00fchrenpflichtig: nein",
+        "popupContent_en": "Capacity: 660, Fee: no",
+        "id": "Parkhaus/Tiefgarage_18",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.278718,
+          48.5370379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_en": "Multi-storey/underground car parking",
+        "name_de": "Parkhaus/Tiefgarage",
+        "name": "Parkhaus/Tiefgarage",
+        "popupContent": "Stellpl\u00e4tze: 10",
+        "popupContent_de": "Stellpl\u00e4tze: 10",
+        "popupContent_en": "Capacity: 10",
+        "id": "Parkhaus/Tiefgarage_19",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1869835,
+          48.4860289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kronprinzenbau",
+        "name_en": "Kronprinzenbau",
+        "name_de": "Kronprinzenbau",
+        "popupContent": "Stellpl\u00e4tze: 200, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 07:00-19:00; Sa 07:00-15:00",
+        "popupContent_de": "Stellpl\u00e4tze: 200, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 07:00-19:00; Sa 07:00-15:00",
+        "popupContent_en": "Capacity: 200, Fee: yes, Opening hours: Mo-Fr 07:00-19:00; Sa 07:00-15:00",
+        "id": "Parkhaus/Tiefgarage_20",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2102469,
+          48.4960494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wickenhof",
+        "name_en": "Wickenhof",
+        "name_de": "Wickenhof",
+        "popupContent": "Stellpl\u00e4tze: 31, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 31, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 31, Fee: yes, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_21",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.227341,
+          48.4646263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tiefgarage Marktplatz",
+        "name_en": "Tiefgarage Marktplatz",
+        "name_de": "Tiefgarage Marktplatz",
+        "popupContent": "Barrierefrei: nein",
+        "popupContent_de": "Barrierefrei: nein",
+        "popupContent_en": "Wheelchair: no",
+        "id": "Parkhaus/Tiefgarage_22",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2265577,
+          48.4651434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tiefgarage Rathaus",
+        "name_en": "Tiefgarage Rathaus",
+        "name_de": "Tiefgarage Rathaus",
+        "popupContent": "Barrierefrei: ja",
+        "popupContent_de": "Barrierefrei: ja",
+        "popupContent_en": "Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_23",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1515808,
+          48.5153021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Klostersee",
+        "name_en": "Klostersee",
+        "name_de": "Klostersee",
+        "popupContent": "Stellpl\u00e4tze: 41, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 41, Geb\u00fchrenpflichtig: ja, Barrierefrei: ja",
+        "popupContent_en": "Capacity: 41, Fee: yes, Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_24",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2272376,
+          48.4640948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadthalle",
+        "name_en": "Stadthalle",
+        "name_de": "Stadthalle",
+        "popupContent": "Stellpl\u00e4tze: 200, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 06:00-01:00, Sa 06:00-01:00, So 06:00-01:00, PH 06:00-01:00",
+        "popupContent_de": "Stellpl\u00e4tze: 200, Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 06:00-01:00, Sa 06:00-01:00, So 06:00-01:00, PH 06:00-01:00",
+        "popupContent_en": "Capacity: 200, Fee: yes, Opening hours: Mo-Fr 06:00-01:00, Sa 06:00-01:00, Su 06:00-01:00, PH 06:00-01:00",
+        "id": "Parkhaus/Tiefgarage_25",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2064707,
+          48.4909876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tiefgarage Nordsternhaus",
+        "name_en": "Tiefgarage Nordsternhaus",
+        "name_de": "Tiefgarage Nordsternhaus",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 07:00-21:00; Sa 07:00-21:00;Barrierefrei: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 07:00-21:00; Sa 07:00-21:00;Barrierefrei: ja",
+        "popupContent_en": "Fee: yes, Opening hours: Mo-Fr 07:00-21:00; Sa 07:00-21:00;Wheelchair: yes",
+        "id": "Parkhaus/Tiefgarage_26",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2071646,
+          48.4904452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "T\u00fcbinger Tor",
+        "name_en": "T\u00fcbinger Tor",
+        "name_de": "T\u00fcbinger Tor",
+        "popupContent": "\u00d6ffnungszeiten: Mo-Fr 06:00-02:30, Sa 06:00-02:30, So 06:00-02:30, Barrierefrei: begrenzt",
+        "popupContent_de": "\u00d6ffnungszeiten: Mo-Fr 06:00-02:30, Sa 06:00-02:30, So 06:00-02:30, Barrierefrei: begrenzt",
+        "popupContent_en": "Opening hours: Mo-Fr 06:00-02:30, Sa 06:00-02:30, Su 06:00-02:30, Wheelchair: limited",
+        "id": "Parkhaus/Tiefgarage_27",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2090815,
+          48.4907364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Echaz-Zentrum",
+        "name_en": "Echaz-Zentrum",
+        "name_de": "Echaz-Zentrum",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_en": "Fee: yes, Opening hours: 24/7",
+        "id": "Parkhaus/Tiefgarage_28",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2177278,
+          48.4871123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gartentor / C&A",
+        "name_en": "Gartentor / C&A",
+        "name_de": "Gartentor / C&A",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 08:00-20:30; Sa 08:00-18:30",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: Mo-Fr 08:00-20:30; Sa 08:00-18:30",
+        "popupContent_en": "Fee: yes, Opening hours: Mo-Fr 08:00-20:30; Sa 08:00-18:30",
+        "id": "Parkhaus/Tiefgarage_29",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2134799,
+          48.4935394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leonhardsplatz",
+        "name_en": "Leonhardsplatz",
+        "name_de": "Leonhardsplatz",
+        "popupContent": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja, \u00d6ffnungszeiten: 24/7",
+        "popupContent_en": "Fee: yes, Opening hours: 24/7",
+        "id": "Parkhaus/Tiefgarage_30",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2188903,
+          48.4906708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obere W\u00e4ssere",
+        "name_en": "Obere W\u00e4ssere",
+        "name_de": "Obere W\u00e4ssere",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_31",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2166948,
+          48.4888588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhaus Kaiserpassage",
+        "name_en": "Parkhaus Kaiserpassage",
+        "name_de": "Parkhaus Kaiserpassage",
+        "popupContent": "Stellpl\u00e4tze: 365, Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 365, Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Capacity: 365, Fee: yes",
+        "id": "Parkhaus/Tiefgarage_32",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2149655,
+          48.4930699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Postarkaden/Commerzbank",
+        "name_en": "Postarkaden/Commerzbank",
+        "name_de": "Postarkaden/Commerzbank",
+        "popupContent": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Fee: yes",
+        "id": "Parkhaus/Tiefgarage_33",
+        "icon": {
+          "id": "carParkCovIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2084004,
+          48.4948208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reisemobilplatz Outletcity",
+        "name_en": "Reisemobilplatz Outletcity",
+        "name_de": "Reisemobilplatz Outletcity",
+        "popupContent": "Stellpl\u00e4tze: 19, Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 19, Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Capacity: 19, Fee: yes",
+        "id": "Wohnmobilstellplatz_0",
+        "icon": {
+          "id": "caravanIcon",
+          "svg": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\t viewBox=\"0 0 32.5 32.5\" style=\"enable-background:new 0 0 32.5 32.5;\" xml:space=\"preserve\"><style type=\"text/css\">\t.st0{fill:#005AB4;}\t.st1{fill:#FFFFFF;}\t.st2{clip-path:url(#SVGID_2_);}\t.st3{fill:#FFFFFF;stroke:#005AB4;stroke-miterlimit:10;}</style><title>womoparken</title><path class=\"st0\" d=\"M32.5,16.3c0,9-7.3,16.3-16.3,16.3S0,25.3,0,16.3C0,7.3,7.3,0,16.3,0h0C25.2,0,32.5,7.3,32.5,16.3\tC32.5,16.3,32.5,16.3,32.5,16.3\"/><path class=\"st1\" d=\"M15.7,7.6c0-1.7-1.3-3-2.9-3.1c-0.1,0-0.2,0-0.3,0H8.7v9.8h1.9v-3.7h1.9c1.7,0.1,3.1-1.1,3.2-2.7\tC15.7,7.8,15.7,7.7,15.7,7.6 M13.8,7.6c0,0.7-0.5,1.3-1.3,1.3c-0.1,0-0.1,0-0.2,0h-1.8V6.2h1.8c0.7-0.1,1.4,0.5,1.4,1.2\tC13.8,7.5,13.8,7.5,13.8,7.6\"/><g>\t<defs>\t\t<path id=\"SVGID_1_\" d=\"M32.5,16.3c0,9-7.3,16.3-16.3,16.3S0,25.3,0,16.3C0,7.3,7.3,0,16.3,0h0C25.2,0,32.5,7.3,32.5,16.3\t\t\tC32.5,16.3,32.5,16.3,32.5,16.3\"/>\t</defs>\t<clipPath id=\"SVGID_2_\">\t\t<use xlink:href=\"#SVGID_1_\"  style=\"overflow:visible;\"/>\t</clipPath>\t<g class=\"st2\">\t\t<path class=\"st3\" d=\"M20.6,27.7c0,1.3-1,2.3-2.3,2.3c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3C19.6,25.4,20.6,26.5,20.6,27.7\"/>\t\t<path class=\"st1\" d=\"M37.3,27.7c0,1.3-1,2.3-2.3,2.3c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3C36.3,25.4,37.3,26.5,37.3,27.7\"/>\t</g></g><path class=\"st1\" d=\"M32.5,16.3C32.5,16.3,32.5,16.3,32.5,16.3c0-1.2-0.1-2.3-0.4-3.4c-0.1,0-0.3-0.1-0.4-0.1c-5,0-10.1,0-15.1,0\tc-0.4,0-0.7,0.1-1,0.3c-0.9,0.5-1.7,1.1-2.6,1.7c-0.3,0.1-0.5,0.4-0.4,0.8c0,0,0,0,0,0.1c0,1,0.8,1.8,1.9,1.8h7.3\tc0.1,0.4,0,0.6-0.3,0.7c-0.8,0.1-1.5,0.2-2.2,0.4c-0.4,0.1-0.7,0.3-0.9,0.6c-0.6,0.8-1.2,1.8-1.8,2.6c-0.2,0.3-0.6,0.6-0.9,0.7\tc-0.8,0.3-1.6,0.6-2.4,0.9c-0.2,0.1-0.4,0.3-0.5,0.6c0,1.1,0,2.2,0,3.2c0,0,0,0,0,0.1c0,0.3,0.2,0.5,0.5,0.5c0.8,0,1.5,0,2.2,0\tc0.5-2,1.4-2.8,2.8-2.8c0.6,0,1.2,0.2,1.8,0.5c0.8,0.5,1.3,1.4,1.3,2.3h6.6c0.3-0.4,0.7-0.7,1-1.1h-2.4c-0.4,0-0.6-0.2-0.6-0.6\tc0-1.3,0-2.7,0-4c0-1.4,0-2.7,0-4l0,0c0-0.4,0.1-0.6,0.6-0.6c1.3,0,2.7,0,4,0c0.4,0,0.6,0.2,0.6,0.6c0,1.7,0,3.5,0,5.2\tC32,21.1,32.5,18.7,32.5,16.3z M21.8,21.8c0,0.3-0.1,0.5-0.4,0.5c-0.7,0-2.2,0.2-2.2,0.2h-2l0,0c-0.4,0-0.5-0.2-0.3-0.5\tc0.6-0.9,1.2-1.8,1.8-2.7c0.1-0.2,0.4-0.3,0.6-0.3c0.7,0,1.3,0,2,0c0.3,0,0.5,0.2,0.5,0.5C21.8,20.3,21.8,21,21.8,21.8z M21.9,15.8\tc0,0.3-0.1,0.5-0.5,0.5c-0.6,0-1.3,0-1.9,0c-0.6,0-1.2,0-1.8,0c-0.4,0-0.5-0.1-0.5-0.5c0-0.4,0-1,0-1.3c0-0.3,0.2-0.5,0.5-0.5h3.7\tc0.3,0,0.5,0,0.5,0.5S21.8,15.5,21.9,15.8z\"/></svg>"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2762985,
+          48.5323623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stellplatz am Sch\u00f6nbergbad",
+        "name_en": "Stellplatz am Sch\u00f6nbergbad",
+        "name_de": "Stellplatz am Sch\u00f6nbergbad",
+        "popupContent": "Stellpl\u00e4tze: 9, Geb\u00fchrenpflichtig: nein, Telefon: +49 7121 70300",
+        "popupContent_de": "Stellpl\u00e4tze: 9, Geb\u00fchrenpflichtig: nein, Telefon: +49 7121 70300",
+        "popupContent_en": "Capacity: 9, Fee: no, Phone: +49 7121 70300",
+        "id": "Wohnmobilstellplatz_1",
+        "icon": {
+          "id": "caravanIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2278745,
+          48.4552904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wohnmobilstellplatz Kohlberg am Jusi",
+        "name_en": "Wohnmobilstellplatz Kohlberg am Jusi",
+        "name_de": "Wohnmobilstellplatz Kohlberg am Jusi",
+        "popupContent": "Stellpl\u00e4tze: 6, Geb\u00fchrenpflichtig: nein, Telefon: +49 7025 910180",
+        "popupContent_de": "Stellpl\u00e4tze: 6, Geb\u00fchrenpflichtig: nein, Telefon: +49 7025 910180",
+        "popupContent_en": "Capacity: 6, Fee: no, Phone: +49 7025 910180",
+        "id": "Wohnmobilstellplatz_2",
+        "icon": {
+          "id": "caravanIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3460062,
+          48.5573898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reutlinger Wohnmobilstellplatz",
+        "name_en": "Reutlinger Wohnmobilstellplatz",
+        "name_de": "Reutlinger Wohnmobilstellplatz",
+        "popupContent": "Stellpl\u00e4tze: 10, Geb\u00fchrenpflichtig: ja",
+        "popupContent_de": "Stellpl\u00e4tze: 10, Geb\u00fchrenpflichtig: ja",
+        "popupContent_en": "Capacity: 10, Fee: yes",
+        "id": "Wohnmobilstellplatz_3",
+        "icon": {
+          "id": "caravanIcon"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1937489,
+          48.4743354
+        ]
+      }
+    }
+  ]
+}
