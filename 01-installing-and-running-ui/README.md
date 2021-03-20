@@ -150,7 +150,6 @@ In the console you will see this message `Digitransit-ui available on port 8080`
   * e.g. change the primary color to orange: `$primary-color: #ff7300;` 
 * City Name 
     * modify the `APP_TITLE` variable located in app/configurations/config.<new_theme>.js
-    * We should simplify Logo creation. Creating a new SVG manually is not an option. Any ideas?
 * `config.rt.js`
     * Replace the content of `config.rt.js` with the following code:
     ```
@@ -189,13 +188,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
         },
         STOP_MAP: `${API_URL}/map/v1/stop-map/`,
         GEOCODING_BASE_URL: GEOCODING_BASE_URL,
-        DYNAMICPARKINGLOTS_MAP: `${API_URL}/map/v1/hb-parking-map/`,
-        ROADWORKS_MAP: `${API_URL}/map/v1/cifs/`,
-        COVID19_MAP: `https://tiles.caresteouvert.fr/public.poi_osm_light/{z}/{x}/{y}.pbf`,
-        CITYBIKE_MAP: `${API_URL}/map/v1/regiorad-map/`,
-        WEATHER_STATIONS_MAP: `${API_URL}/map/v1/weather-stations/`,
-        CHARGING_STATIONS_MAP: `${API_URL}/map/v1/charging-stations/`,
-        BUS_POSITIONS_MAP: `${API_URL}/map/v1/bus-positions/`
+        CITYBIKE_MAP: `${API_URL}/map/v1/regiorad-map/`
       },
 
       appBarLink: false,
@@ -253,9 +246,21 @@ In the console you will see this message `Digitransit-ui available on port 8080`
       defaultOrigins: [
         {
           icon: 'icon-icon_bus',
-          label: 'Linja-autoasema, Reutlingen',
-          lat: 63,
-          lon: 27,
+          label: 'ZOB Herrenberg',
+          lat: 48.5942066,
+          lon: 8.8644041,
+        },
+        {
+          icon: 'icon-icon_star',
+          label: 'Krankenhaus',
+          lat: 48.59174,
+          lon: 8.87536,
+        },
+        {
+          icon: 'icon-icon_star',
+          label: 'Waldfriedhof / Schönbuchturm',
+          lat: 48.6020352,
+          lon: 8.9036348,
         },
       ],
 
@@ -266,13 +271,37 @@ In the console you will see this message `Digitransit-ui available on port 8080`
           {
             name: 'about-this-service',
             nameEn: 'About this service',
-            route: '/tietoja-palvelusta',
+            route: '/dieser-dienst',
             icon: 'icon-icon_info',
           },
         ],
       },
 
       aboutThisService: {
+        de: [
+          {
+            header: 'Über diesen Dienst',
+            paragraphs: [
+              '<a href="https://stadtnavi.de/">Stadtnavi</a> ist eine Reiseplannungs-Anwendung für die Region Herrenberg. Dieser Dienst umfasst ÖPNV, Fußwege, Radverkehr, PKW-Routing (inklusive Park & Ride) und Fahrgemeinschaften.',
+              'Gefördert durch <br>',
+              '<a href="https://www.herrenberg.de/stadtluft"><img src="https://www.herrenberg.de/ceasy/resource/?id=4355&predefinedImageSize=rightEditorContent"/></a>',
+              '<a href="https://stadtnavi.de/">Zur Infoseite</a>'
+            ],
+          },
+          {
+            header: 'Digitransit Plattform',
+            paragraphs: [
+              'Dieser Dienst basiert auf der Digitransit Platform und dem Backend-Dienst OpenTripPlanner. Alle Software ist unter einer offenen Lizenzen verfügbar. Vielen Dank an alle Beteiligten.',        ],
+          },
+          {
+            header: 'Datenquellen',
+            paragraphs: [
+              'Kartendaten: © <a target=new href=https://www.openstreetmap.org/>OpenStreetMap Mitwirkende</a>',
+              'ÖPNV-Daten: Datensätze der <a target=new href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>NVBW GmbH</a> und der <a target=new href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>, Shapes (d.h. Geometrien der Streckenverläufe) jeweils angereichert mit OpenStreetMap-Daten © OpenStreetMap Mitwirkende',
+              'Alle Angaben ohne Gewähr.'
+            ],
+          },
+        ],
         fi: [
           {
             header: 'Tietoja palvelusta',
