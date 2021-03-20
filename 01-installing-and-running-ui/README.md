@@ -188,6 +188,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
         },
         STOP_MAP: `${API_URL}/map/v1/stop-map/`,
         GEOCODING_BASE_URL: GEOCODING_BASE_URL,
+        CITYBIKE_MAP: `${API_URL}/map/v1/regiorad-map/`
       },
 
       appBarLink: false,
