@@ -252,9 +252,21 @@ In the console you will see this message `Digitransit-ui available on port 8080`
       defaultOrigins: [
         {
           icon: 'icon-icon_bus',
-          label: 'Linja-autoasema, Reutlingen',
-          lat: 63,
-          lon: 27,
+          label: 'ZOB Herrenberg',
+          lat: 48.5942066,
+          lon: 8.8644041,
+        },
+        {
+          icon: 'icon-icon_star',
+          label: 'Krankenhaus',
+          lat: 48.59174,
+          lon: 8.87536,
+        },
+        {
+          icon: 'icon-icon_star',
+          label: 'Waldfriedhof / Schönbuchturm',
+          lat: 48.6020352,
+          lon: 8.9036348,
         },
       ],
 
