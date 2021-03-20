@@ -70,6 +70,8 @@ OTP_TAG=latest
 
 Finally run docker-compose specifying your adapted config file (be sure to pass the --build flag, so containers are rebuilt):
 
+*Note*: Please make sure that you have at least `docker-compose` 1.25.0. 
+
 ```sh
-$ docker-compose --build --env-file .env.mycity up -d
+$ docker-compose --env-file=.env.mycity up --build -d
 ```
