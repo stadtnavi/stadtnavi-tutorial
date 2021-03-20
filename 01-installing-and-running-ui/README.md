@@ -272,6 +272,30 @@ In the console you will see this message `Digitransit-ui available on port 8080`
       },
 
       aboutThisService: {
+        de: [
+          {
+            header: 'Über diesen Dienst',
+            paragraphs: [
+              '<a href="https://stadtnavi.de/">Stadtnavi</a> ist eine Reiseplannungs-Anwendung für die Region Herrenberg. Dieser Dienst umfasst ÖPNV, Fußwege, Radverkehr, PKW-Routing (inklusive Park & Ride) und Fahrgemeinschaften.',
+              'Gefördert durch <br>',
+              '<a href="https://www.herrenberg.de/stadtluft"><img src="https://www.herrenberg.de/ceasy/resource/?id=4355&predefinedImageSize=rightEditorContent"/></a>',
+              '<a href="https://stadtnavi.de/">Zur Infoseite</a>'
+            ],
+          },
+          {
+            header: 'Digitransit Plattform',
+            paragraphs: [
+              'Dieser Dienst basiert auf der Digitransit Platform und dem Backend-Dienst OpenTripPlanner. Alle Software ist unter einer offenen Lizenzen verfügbar. Vielen Dank an alle Beteiligten.',        ],
+          },
+          {
+            header: 'Datenquellen',
+            paragraphs: [
+              'Kartendaten: © <a target=new href=https://www.openstreetmap.org/>OpenStreetMap Mitwirkende</a>',
+              'ÖPNV-Daten: Datensätze der <a target=new href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>NVBW GmbH</a> und der <a target=new href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>, Shapes (d.h. Geometrien der Streckenverläufe) jeweils angereichert mit OpenStreetMap-Daten © OpenStreetMap Mitwirkende',
+              'Alle Angaben ohne Gewähr.'
+            ],
+          },
+        ],
         fi: [
           {
             header: 'Tietoja palvelusta',
