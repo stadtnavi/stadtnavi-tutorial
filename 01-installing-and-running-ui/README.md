@@ -1,4 +1,4 @@
-## Customize stadtnavi Frontend, using existing back-end services
+## Customize stadtnavi frontend, using existing backend services
 ### 1. Requirements, installation
     - docker
     - git
