@@ -135,7 +135,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
 ### 4. Starting a new config 
   - to add a new theme run: `yarn run add-theme <new_theme>`
   - for example `yarn run add-theme rt`
-  - 3 file should be created and 1 modified:
+  - 3 files should be created and 1 modified:
     1. app/configurations/config.<new_theme>.js
     2. sass/themes/<new_theme>/_theme.scss 
     3. sass/themes/<new_theme>/main.scss
