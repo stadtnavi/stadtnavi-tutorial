@@ -5,7 +5,7 @@ This is a step by step introduction how to setup a [stadtnavi](https://herrenber
 Step 1 illustrates, how to start and customize a [digitransit-ui](https://github.com/HSLdevcom/digitransit-ui.git) frontend, connecting to existining backend services.
 
 ## [Step 2](02-otp-and-graph-building/README.md)
-Step 2 shows, how to run an OpenTripPlanner backend service and explains how to customize it for a specific region.
+Step 2 shows, how to run an [OpenTripPlanner](https://github.com/HSLdevcom/digitransit-ui.git) backend service and explains how to customize it for a specific region.
 
 ## [Step 3](03-running-otp-and-digitransit/README.md)
 Step 3 shows, how to run the customized digitransit-ui, the OpenTripPlanner backend service and the map server to display POIs.
