@@ -1,6 +1,5 @@
 ## Customize stadtnavi frontend, using existing backend services
 ### 1. Requirements, installation
-    - docker
     - git
     - nodejs(v10.24.0)
     - yarn(LTS)
