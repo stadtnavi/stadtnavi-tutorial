@@ -102,7 +102,7 @@ $ cd digitransit-ui
 ```
 
 
-### 3. Doing an initial build an see it works
+### 3. Doing an initial build to see it works
 
 ```
 $ yarn install
