@@ -1,5 +1,5 @@
 # stadtnavi tutorial
-This is a step by step introduction how to setup a stadtnavi instance. It aims developers wanting to get up and running quickly, using docker(-compose) as a deployment tool. For setups closer to production, please consult e.g. the [transportkollektiv digitransit cookbook](https://transportkollektiv.github.io/digitransit-setup/).
+This is a step by step introduction how to setup a [stadtnavi](https://herrenberg.stadtnavi.de/) instance. It aims developers wanting to get up and running quickly, using docker(-compose) as a deployment tool. For setups closer to production, please consult e.g. the [transportkollektiv digitransit cookbook](https://transportkollektiv.github.io/digitransit-setup/).
 
 ## [Step 1](01-installing-and-running-ui/README.md)
 Step 1 illustrates, how to start and customize a digitransit-ui frontend, connecting to existining backend services.
