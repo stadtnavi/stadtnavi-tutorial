@@ -32,7 +32,7 @@ Creating 02-otp-and-graph-building_opentripplanner_1 ... done
 $
 ```
 
-To verify that the OpenTripPlanner started successfully, you may check for the following lines in the logs:
+To verify that OpenTripPlanner started successfully, you may check for the following lines in the logs:
 ```sh
 $ docker logs 02-otp-and-graph-building_opentripplanner_1
 
