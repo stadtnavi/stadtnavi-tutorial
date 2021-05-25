@@ -1,5 +1,4 @@
-# stadtnavi Tutorial - OpenTripPlanner aufsetzen
-
+# stadtnavi Tutorial - OpenTripPlanner setup
 
 ## Building and running OpenTripPlanner with default config
 
