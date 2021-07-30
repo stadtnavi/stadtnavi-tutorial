@@ -243,8 +243,6 @@ export default configMerger(walttiConfig, {
     availableLanguages: ['de', 'en'],
     defaultLanguage: 'de',
 
-    MATOMO_URL: process.env.MATOMO_URL,
-
     /* disable the "next" column of the Route panel as it can be confusing sometimes: https://github.com/stadtnavi/digitransit-ui/issues/167 */
     displayNextDeparture: false,
     maxWalkDistance: 15000,
@@ -278,22 +276,6 @@ export default configMerger(walttiConfig, {
     },
 
     sprites: 'assets/svg-sprite.hb.svg',
-
-    socialMedia: {
-        title: APP_TITLE,
-        description: APP_DESCRIPTION,
-
-        image: {
-            url: '/img/stadtnavi-social-media-card.png',
-            width: 600,
-            height: 300,
-        },
-
-        twitter: {
-            card: 'summary_large_image',
-            site: '@TUGHerrenberg',
-        },
-    },
 
     dynamicParkingLots: {
        showDynamicParkingLots: true,
@@ -522,7 +504,6 @@ export default configMerger(walttiConfig, {
         };
     },
     displayFareInfoTop: false,
-
 
     showRouteSearch: false,
     showNearYouButtons: false,
