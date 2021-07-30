@@ -221,7 +221,6 @@ export default configMerger(walttiConfig, {
         STOP_MAP: `${API_URL}/routing/v1/router/vectorTiles/stops/`,
         DYNAMICPARKINGLOTS_MAP: `${API_URL}/routing/v1/router/vectorTiles/parking/`,
         ROADWORKS_MAP: `${API_URL}/map/v1/cifs/`,
-        COVID19_MAP: `https://tiles.caresteouvert.fr/public.poi_osm_light/{z}/{x}/{y}.pbf`,
         CITYBIKE_MAP: `${API_URL}/routing/v1/router/vectorTiles/citybikes/`,
         BIKE_PARKS_MAP: `${API_URL}/routing/v1/router/vectorTiles/parking/`,
         WEATHER_STATIONS_MAP: `${API_URL}/map/v1/weather-stations/`,
@@ -313,13 +312,6 @@ export default configMerger(walttiConfig, {
         roadworksSmallIconZoom: 16,
         roadworksMinZoom: 10
     },
-
-    covid19: {
-        show: false,
-        smallIconZoom: 17,
-        minZoom: 15
-    },
-
 
     weatherStations: {
         show: true,
