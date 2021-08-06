@@ -44,7 +44,7 @@ $ docker logs 02-otp-and-graph-building_opentripplanner_1
 12:14:53.865 INFO (GrizzlyServer.java:154) Grizzly server running.
 ```
 
-Now OpenTripPlanner is ready and you may access the interal OTP front end via http://localhost:8090 (Note the port is 8090 as 8080 is mapped to 8090 in the docker-compose.yml).
+Now OpenTripPlanner is ready and you may access the internal OTP front end via http://localhost:8090 (Note the port is 8090 as 8080 is mapped to 8090 in the docker-compose.yml).
 
 If that worked, you may adapt the config to supply your proper data.
 
