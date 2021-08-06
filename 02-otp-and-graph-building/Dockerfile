@@ -20,6 +20,7 @@ RUN mkdir -p /opt/opentripplanner/build/
 # NOTE: we're using dockers caching here. Add items in order of least to most frequent changes
 ADD router-config.json /opt/opentripplanner/build/
 ADD build-config.json /opt/opentripplanner/build/
+ADD otp-config.json /opt/opentripplanner/build/
 ADD $OSM_PBF_URL /opt/opentripplanner/build/
 ADD $GTFS_URL /opt/opentripplanner/build/gtfs.zip
 
