@@ -182,7 +182,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
 * `config.rt.js`
     * Replace the content of `config.rt.js` with the following code:
 ```
-  /* eslint-disable */
+/* eslint-disable */
 import configMerger from '../util/configMerger';
 
 const CONFIG = 'rt';
@@ -192,7 +192,7 @@ const API_URL = process.env.API_URL || 'https://api.stadtnavi.de';
 const MAP_URL = process.env.MAP_URL || 'https://tiles.stadtnavi.eu/streets/{z}/{x}/{y}{r}.png';
 const SEMI_TRANSPARENT_MAP_URL = process.env.SEMITRANSPARENT_MAP_URL || "https://tiles.stadtnavi.eu/satellite-overlay/{z}/{x}/{y}{r}.png";
 const GEOCODING_BASE_URL = process.env.GEOCODING_BASE_URL || "https://photon.stadtnavi.eu/pelias/v1";
-const YEAR = 1900 + new Date().getYear();
+const YEAR = 1901 + new Date().getYear();
 const STATIC_MESSAGE_URL =
     process.env.STATIC_MESSAGE_URL ||
     '/assets/messages/message.hb.json';
@@ -203,10 +203,10 @@ const realtimeHbg = require('./realtimeUtils').default.hbg;
 const hostname = new URL(API_URL);
 realtimeHbg.mqtt = `wss://${hostname.host}/mqtt/`;
 
-const minLat = 47.6020;
-const maxLat = 49.0050;
-const minLon = 8.4087;
-const maxLon = 9.9014;
+const minLat = 48.6020;
+const maxLat = 50.0050;
+const minLon = 9.4087;
+const maxLon = 10.9014;
 
 export default configMerger(walttiConfig, {
     CONFIG,
@@ -242,6 +242,16 @@ export default configMerger(walttiConfig, {
     availableLanguages: ['de', 'en'],
     defaultLanguage: 'de',
 
+    transportModes: {
+        rail: {
+            availableForSelection: true,
+            defaultValue: true,
+        },
+        subway: {
+            availableForSelection: true,
+            defaultValue: true,
+        },
+    },
     /* disable the "next" column of the Route panel as it can be confusing sometimes: https://github.com/stadtnavi/digitransit-ui/issues/167 */
     displayNextDeparture: false,
     maxWalkDistance: 15000,
@@ -276,31 +286,7 @@ export default configMerger(walttiConfig, {
 
     sprites: 'assets/svg-sprite.hb.svg',
 
-    dynamicParkingLots: {
-       showDynamicParkingLots: true,
-        dynamicParkingLotsSmallIconZoom: 14,
-        dynamicParkingLotsMinZoom: 14
-    },
-
     bikeParks: {
-        show: true,
-        smallIconZoom: 14,
-        minZoom: 14
-    },
-
-    roadworks: {
-        showRoadworks: true,
-        roadworksSmallIconZoom: 16,
-        roadworksMinZoom: 10
-    },
-
-    weatherStations: {
-        show: true,
-        smallIconZoom: 17,
-        minZoom: 15
-    },
-
-    chargingStations: {
         show: true,
         smallIconZoom: 14,
         minZoom: 14
@@ -375,8 +361,6 @@ export default configMerger(walttiConfig, {
 
     feedIds: ['hbg'],
 
-    realtime: { hbg: realtimeHbg },
-
     searchSources: ['oa', 'osm'],
 
     searchParams: {
@@ -405,103 +389,23 @@ export default configMerger(walttiConfig, {
 
     menu: {
         copyright: {
-            label: `© Stadt Herrenberg ${YEAR}`
+            label: `© Digitransit ${YEAR}`
         },
         content: [
-            {
-                name: 'about-this-service',
-                nameEn: 'About this service',
-                route: '/dieser-dienst',
-                icon: 'icon-icon_info',
-            },
-            {
-                name: 'imprint',
-                nameEn: 'Imprint',
-                href: 'https://www.herrenberg.de/impressum',
-            },
-            {
-                name: 'privacy',
-                nameEn: 'Privacy',
-                href: 'https://www.herrenberg.de/datenschutz',
-            },
         ],
     },
 
     aboutThisService: {
         de: [
-            {
-                header: 'Über diesen Dienst',
-                paragraphs: [
-                    'stadtnavi ist eine Reiseplanungs-Anwendung für die Stadt Herrenberg und Umgebung. Dieser Dienst umfasst ÖPNV, Fußwege, Radverkehr, Straßen- und Parkplatzinformationen, Ladeinfrastruktur und Sharing-Angebote. Mobilitätsangebote werden durch intermodales Routing miteinander vernetzt.',
-                    'Gefördert durch <br>',
-                    '<a href="https://www.herrenberg.de/stadtluft"><img src="https://www.herrenberg.de/ceasy/resource/?id=4355&predefinedImageSize=rightEditorContent"/></a>',
-
-                ],
-            },
-            {
-                header: 'Mitmachen',
-                paragraphs: [
-                    'Die Stadt Herrenberg hat diese App im Rahmen der Modellstadt, gefördert durch das Bundesministerium für Verkehr und digitale Infrastruktur (BMVI) entwickelt. stadtnavi Anwendung ist eine Open Source Lösung und kann von anderen Kommunen und Akteuren unter ihrem Namen und Erscheinungsbild verwendet und an individuelle Bedürfnisse angepasst und weiterentwickelt werden (White Label Lösung). Mitmachen ist gewünscht!',
-                ]
-            },
-            {
-                header: 'Digitransit Plattform',
-                paragraphs: [
-                    'Dieser Dienst basiert auf der Digitransit Platform und dem Backend-Dienst OpenTripPlanner. Alle Software ist unter einer offenen Lizenzen verfügbar. Vielen Dank an alle Beteiligten.',
-                    'Der gesamte Quellcode der Plattform, die aus vielen verschiedenen Komponenten besteht, ist auf <a href="https://github.com/stadtnavi/">Github</a> verfügbar.'
-                ],
-            },
-            {
-                header: 'Datenquellen',
-                paragraphs: [
-                    'Kartendaten: © <a target=new href=https://www.openstreetmap.org/>OpenStreetMap Mitwirkende</a>',
-                    'ÖPNV-Daten: Datensätze der <a target=new href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>NVBW GmbH</a> und der <a target=new href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>, Shapes (d.h. Geometrien der Streckenverläufe) jeweils angereichert mit OpenStreetMap-Daten © OpenStreetMap Mitwirkende',
-                    'Alle Angaben ohne Gewähr.'
-                ],
-            },
         ],
         en: [
-            {
-                header: 'About this service',
-                paragraphs: [
-                    'stadtnavi is a travel planning application for the city of Herrenberg and its surroundings. This service includes public transport, footpaths, cycling, street and parking information, charging infrastructure and sharing offerings. The mobility offerings are connected through intermodal routing.',
-                    '<a href="https://www.herrenberg.de/stadtluft"><img src="https://www.herrenberg.de/ceasy/resource/?id=4355&predefinedImageSize=rightEditorContent"/></a>',
-                ],
-            },
-            {
-                header: 'Contribute',
-                paragraphs: [
-                    'The city of Herrenberg has developed this app, funded by the Federal Ministry of Transport and Digital Infrastructure (BMVI), as model city. The stadtnavi app is an open source solution and can be used, customized and further developed by other municipalities to meet individual needs (white lable solution). Participation is welcome!',
-                ]
-            },
-            {
-                header: 'Digitransit platform',
-                paragraphs: [
-                    'The Digitransit service platform is an open source routing platform developed by HSL and Traficom. It builds on OpenTripPlanner by Conveyal. Enhancements by Transportkollektiv and MITFAHR|DE|ZENTRALE. All software is open source. Thanks to everybody working on this!',
-                ],
-            },
-            {
-                header: 'Data sources',
-                paragraphs: [
-                    'Map data: © <a target=new href=https://www.openstreetmap.org/>OpenStreetMap contributors</a>',
-                    'Public transit data: Datasets by <a target=new href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>NVBW GmbH</a> and <a target=new href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>, Shapes (d.h. Geometrien der Streckenverläufe) enhanced with OpenStreetMap data © OpenStreetMap contributors',
-                    'No responsibility is accepted for the accuracy of this information.'
-                ],
-            },
         ],
     },
 
     redirectReittiopasParams: true,
 
-    showTicketInformation: true,
-    showTicketPrice: true,
-    availableTickets: { 'hbg' : {}},
-    fareMapping: function mapHbFareId(fareId) {
-        return {
-            en: "Adult",
-            de: "Regulär",
-        };
-    },
+    showTicketInformation: false,
+    showTicketPrice: false,
     displayFareInfoTop: false,
 
     showRouteSearch: false,
@@ -510,44 +414,6 @@ export default configMerger(walttiConfig, {
     // adding assets/geoJson/hb-layers layers
     geoJson: {
         layers: [
-            // bicycleinfrastructure includes shops, repair stations,
-            {
-                name: {
-                    fi: '',
-                    en: 'Service stations and stores',
-                    de: "Service Stationen und Läden",
-                },
-                url: '/assets/geojson/hb-layers/bicycleinfrastructure.geojson',
-            },
-            /* Charging stations
-            {
-                name: {
-                    fi: '',
-                    en: 'Charging stations',
-                    de: 'Ladestationen',
-                },
-                url: '/assets/geojson/hb-layers/charging.geojson',
-            },*/
-            // LoRaWan map layer
-            {
-                name: {
-                    fi: '',
-                    en: 'LoRaWAN Gateways',
-                    de: 'LoRaWAN Gateways',
-                },
-                url: '/assets/geojson/hb-layers/lorawan-gateways.geojson',
-                isOffByDefault: true,
-            },
-            // Nette Toilette layer
-            {
-                name: {
-                    fi: '',
-                    en: 'Public Toilets',
-                    de: 'Nette Toilette',
-                },
-                url: '/assets/geojson/hb-layers/toilet.geojson',
-                isOffByDefault: true,
-            },
         ],
     },
     staticMessagesUrl: STATIC_MESSAGE_URL,
@@ -571,8 +437,8 @@ export default configMerger(walttiConfig, {
     viaPointsEnabled: false,
 });
 
- ```
- 
+```
+
 ### 6. Show results
 
 To start the application in production mode:
