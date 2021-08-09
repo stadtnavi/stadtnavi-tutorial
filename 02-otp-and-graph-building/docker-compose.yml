@@ -1,7 +1,8 @@
 version: '3'
 
 services:
-  opentripplanner-with-graph:
+  opentripplanner:
+    image: ${OTP_IMAGE}:${OTP_TAG}    
     build:
       context: .
       args:
