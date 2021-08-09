@@ -182,7 +182,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
     * modify the `APP_TITLE` variable located in app/configurations/config.<new_theme>.js
 * `config.rt.js`
     * Replace the content of `config.rt.js` with the following code:
-    ```
+```
   /* eslint-disable */
 import configMerger from '../util/configMerger';
 
@@ -233,7 +233,6 @@ export default configMerger(walttiConfig, {
         PELIAS_PLACE: `${
             process.env.GEOCODING_BASE_URL || GEOCODING_BASE_URL
         }/place`,
-        FARES: `${API_URL}/fares`,
         FONT: '' // Do not use Google fonts.
     },
 
@@ -573,7 +572,7 @@ export default configMerger(walttiConfig, {
     viaPointsEnabled: false,
 });
 
-    ```
+ ```
  
 ### 6. Show results
 
