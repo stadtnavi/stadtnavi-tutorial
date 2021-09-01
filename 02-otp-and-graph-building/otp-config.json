@@ -1,0 +1,6 @@
+{
+  "otpFeatures" : {
+    "SandboxAPILegacyGraphQLApi": true,
+    "SandboxAPIMapboxVectorTilesApi": true
+  }
+}

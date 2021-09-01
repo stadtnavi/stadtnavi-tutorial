@@ -5,8 +5,6 @@ services:
     image: stadtnavi/digitransit-proxy:minimal
     ports:
       - 8080:8080
-    volumes:
-      - ${PWD}/logs:/var/log/nginx
     depends_on:
       - "opentripplanner"
   digitransit-ui:
@@ -21,25 +19,11 @@ services:
     image: stadtnavi/hsl-map-server:latest
     environment:
       - OTP_URL=opentripplanner:8080/otp/routers/default/index/graphql
-      # - PARK_API_URL=https://api.parkendd.de/Freiburg
     depends_on:
       - "opentripplanner"
   opentripplanner:
     image: ${OTP_IMAGE}:${OTP_TAG}
-    depends_on:
-      - "graph"
-    environment:
-      - ROUTER_NAME=default
-      - ROUTER_DATA_CONTAINER_URL=http://graph/
-    ports:
-      - "${OTP_PORT}:8080"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
-      interval: 15s
-      timeout: 10s
-      retries: 30  
-  graph:
-    build: 
+    build:
       context: .
       args:
         - OTP_IMAGE=${OTP_IMAGE}
@@ -47,8 +31,10 @@ services:
         - gtfs_url=${GTFS_URL}
         - osm_pbf_url=${OSM_URL}
         - memory=${GRAPH_BUILD_MEMORY}
+    ports:
+      - "${OTP_PORT}:8080"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
       interval: 15s
       timeout: 10s
-      retries: 30  
+      retries: 30
