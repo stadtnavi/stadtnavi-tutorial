@@ -11,8 +11,7 @@ ENV OSM_PBF_URL=$osm_pbf_url
 ARG memory=31G
 ENV MEMORY=$memory
 
-RUN apk add --update zip && \
-    rm -rf /var/cache/apk/*
+RUN apt-get update && apt-get install zip -y
 
 RUN mkdir -p /opt/opentripplanner/build/
 
