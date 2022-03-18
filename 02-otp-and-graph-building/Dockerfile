@@ -11,7 +11,7 @@ ENV OSM_PBF_URL=$osm_pbf_url
 ARG memory=31G
 ENV MEMORY=$memory
 
-RUN apt-get update && apt-get install zip
+RUN apt-get update && apt-get install zip -y
 
 RUN mkdir -p /opt/opentripplanner/build/
 
@@ -27,7 +27,7 @@ ADD $GTFS_URL /opt/opentripplanner/build/gtfs.zip
 RUN java -jar otp-shaded.jar --version | tee build/version.txt
 
 # build
-RUN java -Xmx$MEMORY -jar otp-shaded.jar --build --save /opt/opentripplanner/build/ 
+RUN java -Xmx$MEMORY -jar otp-shaded.jar --build --save /opt/opentripplanner/build/
 
 #
 ENTRYPOINT java -Xmx$MEMORY -jar otp-shaded.jar --load --serve /opt/opentripplanner/build/
