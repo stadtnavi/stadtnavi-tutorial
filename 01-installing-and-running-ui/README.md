@@ -1,6 +1,5 @@
-## Customize stadtnavi Frontend, using existing back-end services
+## Customize stadtnavi frontend, using existing backend services
 ### 1. Requirements, installation
-    - docker
     - git
     - watchman
     - nodejs(v10.24.0)
@@ -115,7 +114,7 @@ $ cd digitransit-ui
 ```
 
 
-### 3. Doing an initial build an see it works
+### 3. Doing an initial build to see if it works
 
 ```
 $ yarn install
@@ -166,7 +165,7 @@ In the console you will see this message `Digitransit-ui available on port 8080`
 ### 4. Starting a new config 
   - to add a new theme run: `yarn run add-theme <new_theme>`
   - for example `yarn run add-theme rt`
-  - 3 file should be created and 1 modified:
+  - 3 files should be created and 1 modified:
     1. app/configurations/config.<new_theme>.js
     2. sass/themes/<new_theme>/_theme.scss 
     3. sass/themes/<new_theme>/main.scss
