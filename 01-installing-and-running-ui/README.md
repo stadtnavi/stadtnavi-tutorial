@@ -1,142 +1,66 @@
 ## Customize stadtnavi Frontend, using existing back-end services
+
+This introduction will use a node:20 docker image to avoid a potentially tedious setup.
+
 ### 1. Requirements, installation
     - docker
     - git
-    - watchman
-    - nodejs(v10.24.0)
-    - yarn(LTS)
-    - build-essential (for the node dependencies)
-    - Docker
- 
-
-### ON DEBIAN 10 ONLY:
-  - add `export OPENSSL_CONF=/etc/ssl/` to your `~/.bashrc` file 
-  - run `source ~/.bashrc`
-
-### Installing Docker(more info [here](https://docs.docker.com/engine/install/debian/))
+    
+### Installing Docker (more info [here](https://docs.docker.com/engine/install/debian/))
 - don't forget to uninstall conflicting packages
 - use the [Docker repository](https://docs.docker.com/engine/install/debian/#install-using-the-repository)
 - create a group and add user https://docs.docker.com/engine/install/linux-postinstall/
 - try `docker run hello-world` and `docker --version`
 
-### Install build-essentials:
-build-essentials contains a lot of packages like gcc, g++, make, etc.  
 
-run:  
-`apt install build-essential`
+### Installing git and cURL:
+`apt-get install git curl -y`
 
-
-check installation:  
-```
-$ make -v
-GNU Make 4.2.1
-Built for x86_64-pc-linux-gnu
-Copyright (C) 1988-2016 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-```
-
-### Installing git:
-`apt-get install git -y`
-
-check installation:
+check installation (exact versions may differ):
 ```
 $ git --version
-git version 2.20.1
+git version 2.39.2
 ```
 
-### Installing watchman:
+### 2. Checking out digitransit
 
-On Mac run
-
-```
-brew install watchman
-```
-
-On Debian 10 it is rather difficult to install. Please follow the instructions
-on the [Watchman installation page](https://facebook.github.io/watchman/docs/install.html).
-
-### Installing npm, nodejs and yarn:
-
-#### install nodejs version 10(more info [here](https://github.com/nodesource/distributions)):
-`curl -fsSL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
-`apt-get install nodejs -y`
-
-check nodejs installation:
-```
-$ nodejs -v
-v10.24.0
-```
-
-#### install npm:
-`apt install npm -y`
-
-check npm installation:
-```
-$ npm --version
-5.8.0
-``` 
-
-#### install yarn(pkg)
-prefered way:
-```
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
-```
-#### OR
-`apt install yarnpkg`
-
-check yarnpkg installation:
-```
-$ yarnpkg --version
-1.13.0
-$ alias yarn=yarnpkg
-$ yarn --version
-1.13.0
-```
-
-On Debian 10 yarn is installed as yarnpkg. To invoke it with the short name enter this in your shell or .bashrc: `alias yarn=yarnpkg`.
-
-### 2. Checking out stadtnavi
+In your local projects directory, checkout the digitransit-ui:
 
 ```
 $ git clone https://github.com/stadtnavi/digitransit-ui.git
-Klone nach 'digitransit-ui' ...
-remote: Enumerating objects: 112, done.
-remote: Counting objects: 100% (112/112), done.
-remote: Compressing objects: 100% (60/60), done.
-remote: Total 140942 (delta 64), reused 79 (delta 52), pack-reused 140830
-Empfange Objekte: 100% (140942/140942), 142.87 MiB | 5.35 MiB/s, Fertig.
-Löse Unterschiede auf: 100% (98939/98939), Fertig.
-
-$ cd digitransit-ui
+Cloning into 'digitransit-ui'...
+remote: Enumerating objects: 190376, done.
+remote: Counting objects: 100% (4619/4619), done.
+remote: Compressing objects: 100% (1604/1604), done.
+remote: Total 190376 (delta 3173), reused 4243 (delta 3004), pack-reused 185757
+Receiving objects: 100% (190376/190376), 202.79 MiB | 7.42 MiB/s, done.
+Resolving deltas: 100% (136603/136603), done.
 ```
 
+### 3. Installing dependencies and running digitransit
 
-### 3. Doing an initial build an see it works
+To install digitransit and it's dependencies, run
 
 ```
-$ yarn install
-yarn install v1.13.0
-[1/5] Validating package.json...
-[2/5] Resolving packages...
-[3/5] Fetching packages...
-info There appears to be trouble with your network connection. Retrying...
-info fsevents@1.2.13: The platform "linux" is incompatible with this module.
-info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
-info fsevents@2.1.3: The platform "linux" is incompatible with this module.
-info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
-[4/5] Linking dependencies...
-warning "workspace-aggregator-020d5fc9-854e-4496-a355-2b26ddcf9918 > isomorphic-relay-router@0.8.6" has incorrect peer dependency "isomorphic-relay@https://github.com/michaelstockton/isomorphic-relay.git#feature-relay-1-public".
-warning "workspace-aggregator-020d5fc9-854e-4496-a355-2b26ddcf9918 > isomorphic-relay-router@0.8.6" has incorrect peer dependency "react@^15.0.1".
-warning " > react-leaflet@2.6.1" has unmet peer dependency "leaflet@^1.6.0".
-warning "enzyme-adapter-react-16 > react-test-renderer@16.13.1" has incorrect peer dependency "react@^16.13.1".
-warning "eslint-config-airbnb > eslint-config-airbnb-base@13.2.0" has incorrect peer dependency "eslint-plugin-import@^2.17.2".
-[5/5] Building fresh packages...
-warning Your current version of Yarn is out of date. The latest version is "1.22.5", while you're on "1.13.0".
-Done in 339.80s.
+$ docker run -ti --rm -p 8080:8080 -v $PWD/digitransit-ui:/digitransit-ui node:20 /bin/bash 
+
+# cd digitransit-ui
+# git checkout next
+# yarn install
+➤ YN0065: Yarn will periodically gather anonymous telemetry: https://yarnpkg.com/advanced/telemetry
+➤ YN0065: Run yarn config set --home enableTelemetry 0 to disable
+
+➤ YN0000: ┌ Resolution step
+➤ YN0002: │ @digitransit-component/digitransit-component@workspace:digitransit-component/packages/digitransit-component doesn't provide @digitransit-component/digitransit-component-dialog-modal (p4d433), requested by @digitransit-component/digitransit-component-autosuggest
+➤ YN0002: │ @digitransit-component/digitransit-component@workspace:digitransit-component/packages/digitransit-component doesn't provide @digitransit-component/digitransit-component-dialog-modal (p03091), requested by @digitransit-component/digitransit-component-favourite-editing-modal
+➤ YN0002: │ @digitransit-component/digitransit-component@workspace:digitransit-component/packages/digitransit-component doesn't provide @hsl-fi/container-spinner (p20867), requested by @digitransit-component/digit
+...
+➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ yazl@npm:2.5.1 can't be found in the cache and will be fetched from the remote registry
+...
+
 
 $ yarn setup
 
@@ -156,10 +80,10 @@ created digitransit-store/packages/digitransit-store-common-functions/lib in 876
 created digitransit-store/packages/digitransit-store-future-route/lib in 1.8s
 
 ```
-The warnings are "ok".
+The warnings are "ok" (well, rather currently expected than ok).
 
 To test the installation run:
-`yarn run dev`
+`CONFIG=herrenberg yarn run dev`
 
 In the console you will see this message `Digitransit-ui available on port 8080`. Open http://localhost:8080/ and wait for the initial loading to finish. 
 
@@ -193,177 +117,38 @@ const API_URL = process.env.API_URL || 'https://api.stadtnavi.de';
 const MAP_URL = process.env.MAP_URL || 'https://tiles.stadtnavi.eu/streets/{z}/{x}/{y}{r}.png';
 const SEMI_TRANSPARENT_MAP_URL = process.env.SEMITRANSPARENT_MAP_URL || "https://tiles.stadtnavi.eu/satellite-overlay/{z}/{x}/{y}{r}.png";
 const GEOCODING_BASE_URL = process.env.GEOCODING_BASE_URL || "https://photon.stadtnavi.eu/pelias/v1";
-const YEAR = 1901 + new Date().getYear();
+const YEAR = 1900 + new Date().getYear();
 const STATIC_MESSAGE_URL =
     process.env.STATIC_MESSAGE_URL ||
-    '/assets/messages/message.hb.json';
+    '/assets/messages/message.empty.json';
 
-const walttiConfig = require('./config.waltti.js').default;
+const parentConfig = require('./config.stadtnavi.js').default;
 
-const realtimeHbg = require('./realtimeUtils').default.hbg;
-const hostname = new URL(API_URL);
-realtimeHbg.mqtt = `wss://${hostname.host}/mqtt/`;
+const minLat = 47.6020;
+const maxLat = 49.0050;
+const minLon = 8.4087;
+const maxLon = 9.9014;
 
-const minLat = 48.6020;
-const maxLat = 50.0050;
-const minLon = 9.4087;
-const maxLon = 10.9014;
-
-export default configMerger(walttiConfig, {
+export default configMerger(parentConfig, {
     CONFIG,
-    URL: {
-        OTP: process.env.OTP_URL || `${API_URL}/routing/v1/router/`,
-        MAP: {
-            default: MAP_URL,
-            satellite: 'https://tiles.stadtnavi.eu/orthophoto/{z}/{x}/{y}.jpg',
-            semiTransparent: SEMI_TRANSPARENT_MAP_URL,
-            bicycle: 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
-        },
-        STOP_MAP: `${API_URL}/routing/v1/router/vectorTiles/stops/`,
-        DYNAMICPARKINGLOTS_MAP: `${API_URL}/routing/v1/router/vectorTiles/parking/`,
-        ROADWORKS_MAP: `${API_URL}/map/v1/cifs/`,
-        CITYBIKE_MAP: `${API_URL}/routing/v1/router/vectorTiles/citybikes/`,
-        BIKE_PARKS_MAP: `${API_URL}/routing/v1/router/vectorTiles/parking/`,
-        WEATHER_STATIONS_MAP: `${API_URL}/map/v1/weather-stations/`,
-        CHARGING_STATIONS_MAP: `${API_URL}/tiles/charging-stations/`,
-        PELIAS: `${process.env.GEOCODING_BASE_URL || GEOCODING_BASE_URL}/search`,
-        PELIAS_REVERSE_GEOCODER: `${
-            process.env.GEOCODING_BASE_URL || GEOCODING_BASE_URL
-        }/reverse`,
-        PELIAS_PLACE: `${
-            process.env.GEOCODING_BASE_URL || GEOCODING_BASE_URL
-        }/place`,
-        FONT: '' // Do not use Google fonts.
+
+    colors: {
+        primary: '#333333',
     },
 
-    mainMenu: {
-        showDisruptions: false,
-    },
+    socialMedia: {
+        title: APP_TITLE,
+        description: APP_DESCRIPTION,
 
-    availableLanguages: ['de', 'en'],
-    defaultLanguage: 'de',
-
-    transportModes: {
-        rail: {
-            availableForSelection: true,
-            defaultValue: true,
-        },
-        subway: {
-            availableForSelection: true,
-            defaultValue: true,
-        },
-    },
-    /* disable the "next" column of the Route panel as it can be confusing sometimes: https://github.com/stadtnavi/digitransit-ui/issues/167 */
-    displayNextDeparture: false,
-    maxWalkDistance: 15000,
-
-    optimize: "TRIANGLE",
-
-    defaultSettings: {
-        optimize: "TRIANGLE",
-        safetyFactor: 0.4,
-        slopeFactor: 0.3,
-        timeFactor: 0.3,
-    },
-
-    defaultOptions: {
-        walkSpeed: [0.83, 1.38, 1.94],
-    },
-
-    itinerary: {
-        delayThreshold: 60,
-    },
-
-    appBarLink: {
-        name: 'Feedback',
-        href: 'https://stadtnavi.de/feedback',
-        target: '_blank'
-    },
-
-    contactName: {
-        de: 'transportkollektiv',
-        default: 'transportkollektiv',
-    },
-
-    sprites: 'assets/svg-sprite.hb.svg',
-
-    bikeParks: {
-        show: true,
-        smallIconZoom: 14,
-        minZoom: 14
-    },
-
-    cityBike: {
-        minZoomStopsNearYou: 10,
-        showStationId: false,
-        useSpacesAvailable: false,
-        showCityBikes: true,
-        networks: {
-            regiorad: {
-                icon: 'regiorad',
-                name: {
-                    de: 'RegioRad',
-                    en: 'RegioRad',
-                },
-                type: 'citybike',
-                url: {
-                    de: 'https://www.regioradstuttgart.de/de',
-                    en: 'https://www.regioradstuttgart.de/',
-                },
-                visibleInSettingsUi: true,
-            }
+        image: {
+            url: '/img/stadtnavi-social-media-card.png',
+            width: 600,
+            height: 300,
         }
     },
-
-    mergeStopsByCode: true,
-
+    
     title: APP_TITLE,
-
-    favicon: './app/configurations/images/hbnext/favicon.png',
-
-    meta: {
-        description: APP_DESCRIPTION,
-    },
-
-    modeToOTP: {
-        carpool: 'CARPOOL',
-    },
-
-    logo: 'hbnext/stadtnavi-logo.svg',
-
-    GTMid: '',
-
-    // get newest version from: https://github.com/moment/moment-timezone/blame/develop/data/packed/latest.json
-    timezoneData: 'Europe/Berlin|CET CEST CEMT|-10 -20 -30|01010101010101210101210101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010|-2aFe0 11d0 1iO0 11A0 1o00 11A0 Qrc0 6i00 WM0 1fA0 1cM0 1cM0 1cM0 kL0 Nc0 m10 WM0 1ao0 1cp0 dX0 jz0 Dd0 1io0 17c0 1fA0 1a00 1ehA0 1a00 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00|41e5',
-
-    map: {
-        useRetinaTiles: true,
-        tileSize: 256,
-        zoomOffset: 0,
-
-        showZoomControl: true, // DT-3470, DT-3397
-        showStreetModeSelector: false, // DT-3470
-        showLayerSelector: true, // DT-3470
-        showStopMarkerPopupOnMobile: false, // DT-3470
-        showScaleBar: true, // DT-3470, DT-3397
-        genericMarker: {
-            popup: {
-                offset: [0,0],
-                maxWidth: 250,
-                minWidth: 250,
-            }
-        },
-        attribution: {
-            'default': '© <a tabindex=-1 href=http://osm.org/copyright>OpenStreetMap Mitwirkende</a>, <a tabindex=-1 href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>Datensätze der NVBW GmbH</a> und <a tabindex=-1 href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>',
-            'satellite': '© <a tabindex=-1 href=http://osm.org/copyright>OpenStreetMap Mitwirkende</a>, © <a tabindex=-1 href="https://www.lgl-bw.de/">LGL BW</a>, <a tabindex=-1 href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>Datensätze der NVBW GmbH</a> und <a tabindex=-1 href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>',
-            'bicycle': '© <a tabindex=-1 href=http://osm.org/copyright>OpenStreetMap Mitwirkende</a>, © <a tabindex=-1 href=https://www.cyclosm.org/#map=12/52.3728/4.8936/cyclosmx>CyclOSM</a>, © <a tabindex=-1 href="https://www.openstreetmap.fr/">OSM-FR</a>, <a tabindex=-1 href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>Datensätze der NVBW GmbH</a> und <a tabindex=-1 href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>',
-        },
-    },
-
-    feedIds: ['hbg'],
-
-    searchSources: ['oa', 'osm'],
-
+    
     searchParams: {
         'boundary.rect.min_lat': 48.34164,
         'boundary.rect.max_lat': 48.97661,
@@ -380,62 +165,33 @@ export default configMerger(walttiConfig, {
         [maxLon, minLat],
     ],
 
-    nationalServiceLink: { name: 'Fahrplanauskunft efa-bw', href: 'https://www.efa-bw.de' },
-
-    defaultEndpoint: {
-        lat: 48.4929,
-        lon: 9.208,
+    cityBike: {
+        minZoomStopsNearYou: 10,
+        showStationId: false,
+        useSpacesAvailable: false,
+        showCityBikes: true,
+        networks: {
+           bolt_reutlingen_tuebingen: {
+             icon: "brand_bolt",
+             operator: "bolt",
+             name: {
+               de: "Bolt OÜ"
+             },
+             type: "scooter",
+             form_factors: ['scooter', 'bicycle'],
+             hideCode: true,
+             enabled: true,
+             url: {
+               de: "https://www.bolt.eu/"
+             }
+           }
+        }
     },
 
-
-    menu: {
-        copyright: {
-            label: `© Digitransit ${YEAR}`
-        },
-        content: [
-        ],
-    },
-
-    aboutThisService: {
-        de: [
-        ],
-        en: [
-        ],
-    },
-
-    redirectReittiopasParams: true,
-
-    showTicketInformation: false,
-    showTicketPrice: false,
-    displayFareInfoTop: false,
-
-    showRouteSearch: false,
-    showNearYouButtons: false,
-
-    // adding assets/geoJson/hb-layers layers
-    geoJson: {
-        layers: [
-        ],
-    },
     staticMessagesUrl: STATIC_MESSAGE_URL,
 
-
-    suggestCarMinDistance: 800,
-    suggestWalkMaxDistance: 3000,
-    suggestBikeAndPublicMinDistance: 3000,
-    suggestBikeAndParkMinDistance: 3000,
-
-    // live bus locations
-    vehicles: true,
-    showVehiclesOnSummaryPage: false,
-    showVehiclesOnStopPage: true,
-
-    showBikeAndPublicItineraries: true,
-    showBikeAndParkItineraries: true,
-    showStopAndRouteSearch: false,
-    showTimeTableOptions: false,
-
-    viaPointsEnabled: false,
+    // no live bus locations
+    vehicles: false,
 });
 
 ```
@@ -463,8 +219,11 @@ Running stadtnavi instance in dev/prod mode:
   OR
   - `yarn build` then `CONFIG=rt yarn run start` (production mode)
 
-### 7. Running in Docker
-  1. build a docker image, run: `docker build -t stadtnavi/digitransit-ui .` (NOTE the "." at the end)
+### 7. Building a Docker image
+
+When your happy with your changes, you may quit the docker container (via `exit`), and build docker image we will reuse in subsequent tutorial steps.
+
+  1. In the `digitransit-ui directory, build a docker image, run: `docker build -t stadtnavi/digitransit-ui .` (NOTE the "." at the end)
   2. run the image: `docker run -p 8080:8080 -e CONFIG=rt stadtnavi/digitransit-ui`
     - any environment variable can be specified after the `-e` option
     - more information [here](https://github.com/HSLdevcom/digitransit-ui/blob/master/docs/Docker.md)
