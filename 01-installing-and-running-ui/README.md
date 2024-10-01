@@ -1,7 +1,6 @@
 ## Customize stadtnavi Frontend, using existing back-end services
 
-This introduction will use a node:16 docker image to avoid a tedious setup. Note that node 16 has reached end of life and should not be used for production setups.
-
+This introduction will use a node:20 docker image to avoid a potentially tedious setup.
 
 ### 1. Requirements, installation
     - docker
@@ -43,7 +42,7 @@ Resolving deltas: 100% (136603/136603), done.
 To install digitransit and it's dependencies, run
 
 ```
-$ docker run -ti --rm -p 8080:8080 -v $PWD/digitransit-ui:/digitransit-ui node:16 /bin/bash 
+$ docker run -ti --rm -p 8080:8080 -v $PWD/digitransit-ui:/digitransit-ui node:20 /bin/bash 
 
 # cd digitransit-ui
 # git checkout next
@@ -237,7 +236,7 @@ export default configMerger(walttiConfig, {
 
     mergeStopsByCode: true,
 
-    title: APP_TITLE,
+        title: APP_TITLE,
 
     favicon: './app/configurations/images/hbnext/favicon.png',
 
@@ -271,8 +270,8 @@ export default configMerger(walttiConfig, {
                 offset: [0,0],
                 maxWidth: 250,
                 minWidth: 250,
-            }
-        },
+        }
+    },
         attribution: {
             'default': '© <a tabindex=-1 href=http://osm.org/copyright>OpenStreetMap Mitwirkende</a>, <a tabindex=-1 href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>Datensätze der NVBW GmbH</a> und <a tabindex=-1 href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>',
             'satellite': '© <a tabindex=-1 href=http://osm.org/copyright>OpenStreetMap Mitwirkende</a>, © <a tabindex=-1 href="https://www.lgl-bw.de/">LGL BW</a>, <a tabindex=-1 href=https://www.nvbw.de/aufgaben/digitale-mobilitaet/open-data/>Datensätze der NVBW GmbH</a> und <a tabindex=-1 href=https://www.openvvs.de/dataset/gtfs-daten>VVS GmbH</a>',
@@ -281,9 +280,9 @@ export default configMerger(walttiConfig, {
     },
 
     feedIds: ['hbg'],
-
+    
     searchSources: ['oa', 'osm'],
-
+    
     searchParams: {
         'boundary.rect.min_lat': 48.34164,
         'boundary.rect.max_lat': 48.97661,
@@ -314,7 +313,7 @@ export default configMerger(walttiConfig, {
         },
         content: [
         ],
-    },
+             },
 
     aboutThisService: {
         de: [
@@ -387,7 +386,7 @@ Running stadtnavi instance in dev/prod mode:
 
 When your happy with your changes, you may quit the docker container (via `exit`), and build docker image we will reuse in subsequent tutorial steps.
 
-  1. In the ``digitransit-ui directory, build a docker image, run: `docker build -t stadtnavi/digitransit-ui .` (NOTE the "." at the end)
+  1. In the `digitransit-ui directory, build a docker image, run: `docker build -t stadtnavi/digitransit-ui .` (NOTE the "." at the end)
   2. run the image: `docker run -p 8080:8080 -e CONFIG=rt stadtnavi/digitransit-ui`
     - any environment variable can be specified after the `-e` option
     - more information [here](https://github.com/HSLdevcom/digitransit-ui/blob/master/docs/Docker.md)
